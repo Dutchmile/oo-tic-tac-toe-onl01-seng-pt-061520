@@ -111,8 +111,9 @@ def display_board
       puts "#{winner} won!"
     elsif draw?
       puts "draw"
+    else
+      play
     end
-    play
   end
 
 end

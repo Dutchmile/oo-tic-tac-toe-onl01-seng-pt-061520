@@ -80,7 +80,7 @@ def display_board
 
   def won?
     WIN_COMBINATIONS.each do |array|
-      if @board[array] == ["X","X","X"] || @board[array] == ["O","O","O"]
+      if @board[array[0]] == @board[array[1]] == @board[array[2]]
         true
       else
         false

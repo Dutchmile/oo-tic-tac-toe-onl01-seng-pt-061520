@@ -79,7 +79,9 @@ def display_board
   end
 
   def full?
-    false if @board.include? (" ")
+    @board.all do |space|
+      space == "X" || space == "O"
+    end
   end
 
 end

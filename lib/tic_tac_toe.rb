@@ -99,6 +99,7 @@ def display_board
       else
         return "O"
       end
+    end
   end
 
 end

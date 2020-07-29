@@ -79,7 +79,7 @@ def display_board
   end
 
   def full?
-
+    !won?
   end
 
 end

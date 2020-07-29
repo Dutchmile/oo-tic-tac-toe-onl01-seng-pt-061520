@@ -71,19 +71,6 @@ def display_board
   end
 
   def turn
-    puts "Please enter 1-9"
-     position = gets.strip
-    index = input_to_index(position)
-    if valid_move?(index)
-      token = current_player
-      move(index, token)
-    else
-      turn
-    end
-    display_board
-  end
-
-  def turn
     puts "Please enter a number (1-9):"
     user_input = gets.strip
     index = input_to_index(user_input)

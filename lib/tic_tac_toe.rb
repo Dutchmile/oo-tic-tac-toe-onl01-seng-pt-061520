@@ -107,14 +107,14 @@ def display_board
   def play
     until over?
     turn
+    end
     # binding.pry
         if won?
         #  binding.pry
           puts "Congratulations #{winner}!"
         elsif draw?
-          puts "draw"
+          puts "Cat's Game!"
         end
-      end
   end
 
 end

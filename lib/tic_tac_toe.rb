@@ -74,11 +74,8 @@ def display_board
 
   def won?
     WIN_COMBINATIONS.detect do |array|
-      if @board[array[0]] == @board[array[1]] && @board[array[0]] == @board[array[2]] && position_taken?(array[0])
-        return array
-      end
+      @board[array[0]] == @board[array[1]] && @board[array[0]] == @board[array[2]] && position_taken?(array[0])
     end
-    false
   end
 
   def full?

@@ -85,11 +85,7 @@ def display_board
   end
 
   def draw?
-    if full? && !won?
-      true
-    else
-      false
-    end
+    full? && !won?
   end
 
 end

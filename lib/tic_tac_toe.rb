@@ -107,6 +107,7 @@ def display_board
   def play
     until over?
     turn
+    binding.pry
         if won?
           binding.pry
           puts "Congratulations #{winner}!"

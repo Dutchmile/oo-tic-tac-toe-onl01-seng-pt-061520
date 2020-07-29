@@ -94,7 +94,7 @@ def display_board
 
   def winner
     WIN_COMBINATIONS.detect do |array|
-      if @board[array[0]]
+      if @board[array[0]] == "X"
         return "X"
       else
         return "O"

@@ -34,11 +34,7 @@ def display_board
  end
 
  def position_taken?(index)
-   if @board[index] == "X" || @board[index] == "O"
-     true
-   else
-     false
-   end
+   @board[index] == "X" || @board[index] == "O"
   end
 #  binding.pry
 
@@ -87,5 +83,8 @@ def display_board
     false
   end
 
+  def full?
+    
+  end
 
 end

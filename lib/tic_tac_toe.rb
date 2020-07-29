@@ -104,4 +104,7 @@ def display_board
     end
   end
 
+  def play
+  end
+
 end

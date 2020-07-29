@@ -88,4 +88,7 @@ def display_board
     full? && !won?
   end
 
+  def over?
+    draw? || won?
+  end
 end

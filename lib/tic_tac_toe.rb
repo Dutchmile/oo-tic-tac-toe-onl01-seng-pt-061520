@@ -112,8 +112,6 @@ def display_board
         elsif draw?
           puts "draw"
         end
-      else
-        play
       end
   end
 

@@ -108,7 +108,7 @@ def display_board
     until over?
     turn
         if won?
-          puts "#{winner} won!"
+          puts "Congratulations #{winner}!"
         elsif draw?
           puts "draw"
         end

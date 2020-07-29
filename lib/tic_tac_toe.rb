@@ -91,4 +91,8 @@ def display_board
   def over?
     draw? || won?
   end
+
+  def winner?
+  end
+  
 end

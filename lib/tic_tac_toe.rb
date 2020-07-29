@@ -79,7 +79,7 @@ def display_board
       move(index, token)
       display_board
     else
-      puts "try again"
+      turn
     end
   end
 

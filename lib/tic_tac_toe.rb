@@ -97,9 +97,10 @@ def display_board
       if @board[array[0]] == "X"
         return "X"
       else
-        return "O"
+        #return "O"
       end
     end
+    return "O"
   end
 
 end

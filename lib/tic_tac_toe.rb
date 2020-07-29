@@ -52,9 +52,7 @@ def display_board
   end
 
   def current_player
-    if turn_count == 0
-      return "X"
-    elsif turn_count.even? == true
+    if turn_count.even? == true
       return "X"
     else
       return "O"

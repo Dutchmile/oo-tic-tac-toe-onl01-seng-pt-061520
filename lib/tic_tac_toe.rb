@@ -84,7 +84,7 @@ def display_board
   end
 
   def full?
-    
+
   end
 
 end

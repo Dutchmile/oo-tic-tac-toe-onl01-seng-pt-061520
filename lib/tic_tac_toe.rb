@@ -79,6 +79,7 @@ def display_board
   end
 
   def won?
+    WIN_COMBINATIONS.INCLUDE? (@board)
   end
 
 

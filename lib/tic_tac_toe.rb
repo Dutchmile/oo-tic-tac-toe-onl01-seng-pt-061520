@@ -42,19 +42,17 @@ def display_board
   end
 #  binding.pry
 
-#  def valid_move?(index)
-#    if index == (0...9)
-#      true
-#    elsif @board[index] == " "
-#      true
-#    else
-#      false
-#    end
-#  end
-
-def valid_move?(index)
-    !position_taken?(index) && index.between?(0,8)
+  def valid_move?(index)
+    if index == (0...8) && @board[index] == " "
+      true
+    else
+      false
+    end
   end
+
+# def valid_move?(index)
+  #  !position_taken?(index) && index.between?(0,8)
+#  end
 
 
   def turn_count

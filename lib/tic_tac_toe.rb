@@ -105,6 +105,14 @@ def display_board
   end
 
   def play
+    if !over?
+      turn
+    elsif won?
+      puts "#{winner} won!"
+    elsif draw?
+      puts "draw"
+    end
+    play
   end
 
 end

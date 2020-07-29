@@ -73,7 +73,7 @@ def display_board
   end
 
   def won?
-    WIN_COMBINATIONS.each do |array|
+    WIN_COMBINATIONS.detect do |array|
       if @board[array[0]] == @board[array[1]] && @board[array[0]] == @board[array[2]] && position_taken?(array[0])
         return array
       end

@@ -94,5 +94,5 @@ def display_board
 
   def winner?
   end
-  
+
 end

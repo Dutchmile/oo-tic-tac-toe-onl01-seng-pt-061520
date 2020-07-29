@@ -96,10 +96,12 @@ def display_board
     WIN_COMBINATIONS.detect do |array|
       if @board[array[0]] == "X" && @board[array[1]] == "X" && @board [array[2]] == "X"
         return "X"
-        #return "O"
+      elsif @board[array[0]] == "O" && @board[array[1]] == "O" && @board [array[2]] == "O"
+        return "O"
+      else
+        nil
       end
     end
-    return "O"
   end
 
 end

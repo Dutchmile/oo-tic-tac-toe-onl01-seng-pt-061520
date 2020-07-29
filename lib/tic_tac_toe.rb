@@ -93,7 +93,12 @@ def display_board
   end
 
   def winner
-    @board[turn_count - 1]
+    WIN_COMBINATIONS.detect do |array|
+      if @board[array[0]]
+        return "X"
+      else
+        return "O"
+      end
   end
 
 end

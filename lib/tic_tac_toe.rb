@@ -79,7 +79,7 @@ def display_board
   end
 
   def full?
-    true if @board.include? (" ")
+    false if @board.include? (" ")
   end
 
 end

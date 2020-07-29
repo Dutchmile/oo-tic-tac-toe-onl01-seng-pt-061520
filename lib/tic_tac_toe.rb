@@ -93,6 +93,7 @@ def display_board
   end
 
   def winner
+    current_player
   end
 
 end

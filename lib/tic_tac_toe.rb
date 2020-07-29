@@ -105,7 +105,7 @@ def display_board
   end
 
   def play
-    until over? 
+    until over?
     turn
         if won?
           puts "#{winner} won!"

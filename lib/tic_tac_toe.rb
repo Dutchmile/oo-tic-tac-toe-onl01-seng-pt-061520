@@ -79,7 +79,15 @@ def display_board
   end
 
   def won?
-    WIN_COMBINATIONS.include? (@board)
+    WIN_COMBINATIONS.each do |array|
+      if @board[array] == ["X","X","X"] || @board[array] == ["O","O","O"]
+        true
+      else
+        false
+      end
+    end
+  end
+  
   end
 
 

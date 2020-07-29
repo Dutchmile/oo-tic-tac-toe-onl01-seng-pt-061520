@@ -92,7 +92,7 @@ def display_board
     draw? || won?
   end
 
-  def winner?
+  def winner
   end
 
 end
